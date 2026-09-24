@@ -12,7 +12,7 @@ grading, attendance, academic records, report cards, and transcripts.
 - Trinidad, Anthony Ruiz O.
 
 ## Tech Stack
-- Java (Swing, NetBeans IDE)
+- Java (NetBeans IDE)
 - MySQL / MariaDB (JDBC)
 - Git / GitHub for version control
 
