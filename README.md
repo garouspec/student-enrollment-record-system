@@ -1,6 +1,6 @@
 # Student Enrollment, Grading and Record Management System
 
-A desktop application built in Java (NetBeans, Swing) with a MySQL/MariaDB
+A desktop application built in Java (NetBeans) with a MySQL/MariaDB
 backend, for managing student registration, enrollment, subjects and courses,
 grading, attendance, academic records, report cards, and transcripts.
 
@@ -12,7 +12,7 @@ grading, attendance, academic records, report cards, and transcripts.
 - Trinidad, Anthony Ruiz O.
 
 ## Tech Stack
-- Java (Swing, NetBeans IDE)
+- Java (NetBeans IDE)
 - MySQL / MariaDB (JDBC)
 - Git / GitHub for version control
 
