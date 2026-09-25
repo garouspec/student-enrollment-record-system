@@ -24,4 +24,8 @@ hs_err_pid*
 replay_pid*
 /build/
 !lib/*.jar
+<<<<<<< HEAD
 nbproject/private/
+=======
+/dist/
+>>>>>>> b2f1b0cc1fc042eeec0b188604f1781fab127ff5
