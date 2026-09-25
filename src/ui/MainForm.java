@@ -28,21 +28,128 @@ public class MainForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        menuBar = new javax.swing.JMenuBar();
+        menuFile = new javax.swing.JMenu();
+        menuItemLogout = new javax.swing.JMenuItem();
+        menuRegistration = new javax.swing.JMenu();
+        menuStudents = new javax.swing.JMenuItem();
+        jEnrollment = new javax.swing.JMenu();
+        menuEnrollment = new javax.swing.JMenuItem();
+        jGrades = new javax.swing.JMenu();
+        menuGrades = new javax.swing.JMenuItem();
+        jAttendance = new javax.swing.JMenu();
+        menuAttendance = new javax.swing.JMenuItem();
+        menuReports = new javax.swing.JMenu();
+        menuReportCards = new javax.swing.JMenuItem();
+        menuTranscripts = new javax.swing.JMenuItem();
+        menuAcademicRecords = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        menuFile.setText("File");
+
+        menuItemLogout.setText("Logout");
+        menuItemLogout.addActionListener(this::menuItemLogoutActionPerformed);
+        menuFile.add(menuItemLogout);
+
+        menuBar.add(menuFile);
+
+        menuRegistration.setText("Registration");
+
+        menuStudents.setText("Manage Students");
+        menuStudents.addActionListener(this::menuStudentsActionPerformed);
+        menuRegistration.add(menuStudents);
+
+        menuBar.add(menuRegistration);
+
+        jEnrollment.setText("Enrollment");
+
+        menuEnrollment.setText("Manage Enrollment");
+        menuEnrollment.addActionListener(this::menuEnrollmentActionPerformed);
+        jEnrollment.add(menuEnrollment);
+
+        menuBar.add(jEnrollment);
+
+        jGrades.setText("Grading");
+
+        menuGrades.setText("Manage Grades");
+        menuGrades.addActionListener(this::menuGradesActionPerformed);
+        jGrades.add(menuGrades);
+
+        menuBar.add(jGrades);
+
+        jAttendance.setText("Attendance");
+
+        menuAttendance.setText("Manage Attendance");
+        menuAttendance.addActionListener(this::menuAttendanceActionPerformed);
+        jAttendance.add(menuAttendance);
+
+        menuBar.add(jAttendance);
+
+        menuReports.setText("Reports");
+
+        menuReportCards.setText("Report Cards");
+        menuReportCards.addActionListener(this::menuReportCardsActionPerformed);
+        menuReports.add(menuReportCards);
+
+        menuTranscripts.setText("Transcripts");
+        menuTranscripts.addActionListener(this::menuTranscriptsActionPerformed);
+        menuReports.add(menuTranscripts);
+
+        menuAcademicRecords.setText("Academic Records");
+        menuAcademicRecords.addActionListener(this::menuAcademicRecordsActionPerformed);
+        menuReports.add(menuAcademicRecords);
+
+        menuBar.add(menuReports);
+
+        setJMenuBar(menuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 697, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 436, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void menuStudentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuStudentsActionPerformed
+        new StudentRegistrationForm().setVisible(true);
+    }//GEN-LAST:event_menuStudentsActionPerformed
+
+    private void menuEnrollmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuEnrollmentActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuEnrollmentActionPerformed
+
+    private void menuGradesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuGradesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuGradesActionPerformed
+
+    private void menuAttendanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAttendanceActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuAttendanceActionPerformed
+
+    private void menuReportCardsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuReportCardsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuReportCardsActionPerformed
+
+    private void menuItemLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemLogoutActionPerformed
+        new LogInForm().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_menuItemLogoutActionPerformed
+
+    private void menuTranscriptsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuTranscriptsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuTranscriptsActionPerformed
+
+    private void menuAcademicRecordsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAcademicRecordsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuAcademicRecordsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +177,20 @@ public class MainForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jAttendance;
+    private javax.swing.JMenu jEnrollment;
+    private javax.swing.JMenu jGrades;
+    private javax.swing.JMenuItem menuAcademicRecords;
+    private javax.swing.JMenuItem menuAttendance;
+    private javax.swing.JMenuBar menuBar;
+    private javax.swing.JMenuItem menuEnrollment;
+    private javax.swing.JMenu menuFile;
+    private javax.swing.JMenuItem menuGrades;
+    private javax.swing.JMenuItem menuItemLogout;
+    private javax.swing.JMenu menuRegistration;
+    private javax.swing.JMenuItem menuReportCards;
+    private javax.swing.JMenu menuReports;
+    private javax.swing.JMenuItem menuStudents;
+    private javax.swing.JMenuItem menuTranscripts;
     // End of variables declaration//GEN-END:variables
 }
